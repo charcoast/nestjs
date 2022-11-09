@@ -1,0 +1,34 @@
+GET http://localhost:3000/orders
+
+
+###
+GET http://localhost:3000/orders/2fd2e980-3aa1-4ba5-a460-980dfe2d28df
+
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "description": "teste descrição",
+  "status": true
+}
+
+###
+
+PATCH http://localhost:3000/orders/d5cc73b5-6ae3-431f-bb39-6b37d8b3f752
+Content-Type: application/json
+
+{
+  "description": "testeqwe descrição",
+  "status": true
+}
+
+###
+
+DELETE http://localhost:3000/orders/d5cc73b5-6ae3-431f-bb39-6b37d8b3f752
+Content-Type: application/json
+
+{
+  "description": "testeqwe descrição",
+  "status": true
+}
